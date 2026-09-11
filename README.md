@@ -8,6 +8,11 @@ runtime-зависимостей. Визуальный ритм вдохновл
 Niagara Launcher, но тексты, композиция, интерфейсный mockup, палитра и
 изображение созданы специально для Zapasli.
 
+Hero-блок содержит анимированный mockup с тремя экранами приложения. Движение
+автоматически отключается при системной настройке reduced motion. Кнопка
+«Скачать приложение» ведёт на проверенный demo APK из GitHub prerelease
+[`v0.2.0-barcode`](https://github.com/sokolkolotay/zapasli-android/releases/tag/v0.2.0-barcode).
+
 ## Требования
 
 - любой статический HTTP-сервер;
