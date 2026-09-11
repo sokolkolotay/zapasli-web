@@ -2,10 +2,10 @@
 
 The public endpoint is `https://zapasli.sokolkolotaj.ru`.
 
-The site runs as an unprivileged static Caddy container on the existing
-`zapasli_edge` Docker network. It does not publish host ports. The public Caddy
-instance from `zapasli-backend` terminates TLS and proxies requests to
-`zapasli-web:8080`.
+The site runs as a hardened static Caddy container on the existing
+`zapasli_edge` Docker network. It has a read-only filesystem, no host ports,
+and only the network-bind capability. The public Caddy instance from
+`zapasli-backend` terminates TLS and proxies requests to `zapasli-web:8080`.
 
 ## Requirements
 
