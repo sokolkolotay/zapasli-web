@@ -1,0 +1,34 @@
+{
+	admin off
+	persist_config off
+	auto_https off
+	servers {
+		protocols h1
+	}
+}
+
+:8080 {
+	root * /srv
+	encode zstd gzip
+
+	header {
+		-Server
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		Permissions-Policy "camera=(), microphone=(), geolocation=()"
+	}
+
+	@immutable path_regexp assets \.(?:css|js|svg|webp|png|jpg|jpeg|woff2)$
+	header @immutable Cache-Control "public, max-age=604800"
+
+	@documents path / /index.html
+	header @documents Cache-Control "public, max-age=0, must-revalidate"
+
+	file_server
+
+	log {
+		output stdout
+		format json
+	}
+}

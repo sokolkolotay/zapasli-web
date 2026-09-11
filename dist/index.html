@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Zapasli — семейное Android-приложение для учёта домашних продуктов, сроков годности и осознанного питания."
+    />
+    <meta name="theme-color" content="#0b211a" />
+    <title>Zapasli — домашние запасы, которые думают наперёд</title>
+    <link rel="canonical" href="https://zapasli.sokolkolotaj.ru/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">К содержанию</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zapasli — на главную">
+        <span class="brand-mark" aria-hidden="true">z</span>
+        <span>zapasli</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="#flow">Как работает</a>
+        <a href="#inside">Возможности</a>
+        <a href="#engineering">Технологии</a>
+      </nav>
+      <a
+        class="header-link"
+        href="https://github.com/sokolkolotay/zapasli-android"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Семейные запасы · Android</p>
+          <h1>Дом знает,<br />что у вас есть.</h1>
+          <p class="hero-lead">
+            Zapasli объединяет продукты, сроки годности и питание семьи в одном
+            спокойном пространстве — без забытых покупок и лишней рутины.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#flow">Как это работает</a>
+            <a
+              class="button button-quiet"
+              href="https://api.zapasli.sokolkolotaj.ru/swagger"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Открыть API <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <dl class="hero-facts" aria-label="Ключевые свойства проекта">
+            <div><dt>Offline-first</dt><dd>работает без сети</dd></div>
+            <div><dt>Family sync</dt><dd>единые запасы дома</dd></div>
+            <div><dt>Private by design</dt><dd>личные цели остаются личными</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-product" aria-label="Предпросмотр главного экрана Zapasli">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone-top"><span>9:41</span><span>● ◒</span></div>
+            <div class="phone-content">
+              <div class="phone-heading">
+                <div>
+                  <small>Доброе утро</small>
+                  <strong>Дом Соколовых</strong>
+                </div>
+                <span class="avatar">ИС</span>
+              </div>
+              <div class="expiry-card">
+                <div class="expiry-label"><span></span> Важно сегодня</div>
+                <strong>3 продукта лучше использовать</strong>
+                <div class="expiry-row">
+                  <div class="food-icon milk">М</div>
+                  <div><b>Молоко 3,2%</b><small>годно до завтра · 930 мл</small></div>
+                  <em>1 дн.</em>
+                </div>
+                <div class="expiry-row">
+                  <div class="food-icon herb">З</div>
+                  <div><b>Свежая зелень</b><small>холодильник · 140 г</small></div>
+                  <em>2 дн.</em>
+                </div>
+              </div>
+              <div class="phone-section-title"><b>На ужин из запасов</b><span>Все</span></div>
+              <div class="recipe-card">
+                <span class="recipe-visual">🥬</span>
+                <div><b>Зелёная паста</b><small>25 мин · 520 ккал</small></div>
+                <span>92%</span>
+              </div>
+              <div class="bottom-nav">
+                <span class="active">⌂<small>Главная</small></span>
+                <span>▤<small>Запасы</small></span>
+                <span class="add">＋</span>
+                <span>◇<small>Блюда</small></span>
+                <span>○<small>Профиль</small></span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note note-top" aria-hidden="true">
+            <span>−18%</span>
+            <small>меньше списаний</small>
+          </div>
+          <div class="floating-note note-bottom" aria-hidden="true">
+            <span>Синхронизировано</span>
+            <small>только что · 3 участника</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow" id="flow" aria-labelledby="flow-title">
+        <div>
+          <p class="section-kicker">Один понятный поток</p>
+          <h2 id="flow-title">От покупки<br />до подходящего блюда.</h2>
+        </div>
+        <ol class="flow-list">
+          <li><span>01</span><strong>Чек или штрихкод</strong><p>Добавьте покупку камерой или вручную.</p></li>
+          <li><span>02</span><strong>Запас и срок</strong><p>Укажите количество и место хранения.</p></li>
+          <li><span>03</span><strong>Приоритет</strong><p>Сначала увидите то, что скоро испортится.</p></li>
+          <li><span>04</span><strong>Блюдо</strong><p>Выберите рецепт под продукты и личную цель.</p></li>
+        </ol>
+      </section>
+
+      <section class="manifesto reveal" id="inside">
+        <p class="section-kicker">Не просто список</p>
+        <p>Zapasli смотрит на домашние продукты как на живую систему.</p>
+      </section>
+
+      <section class="features" aria-label="Возможности Zapasli">
+        <article class="feature feature-expiry reveal">
+          <div class="feature-copy">
+            <span class="feature-number">01</span>
+            <p class="section-kicker">Сроки</p>
+            <h2>Съесть вовремя,<br />а не выбросить.</h2>
+            <p>
+              Каждая покупка становится отдельной партией. Zapasli поднимает
+              наверх продукты с ближайшим сроком и подсказывает, куда их
+              использовать.
+            </p>
+          </div>
+          <div class="expiry-visual" aria-label="Пример группировки продуктов по сроку">
+            <div class="day-ring"><span>3</span><small>дня</small></div>
+            <ul>
+              <li><i class="dot coral"></i><span><b>Йогурт</b><small>2 упаковки</small></span><em>сегодня</em></li>
+              <li><i class="dot lime"></i><span><b>Шпинат</b><small>180 грамм</small></span><em>завтра</em></li>
+              <li><i class="dot mint"></i><span><b>Томаты</b><small>5 штук</small></span><em>3 дня</em></li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="feature feature-family reveal">
+          <div class="family-visual" aria-label="Пример общей семейной кладовой">
+            <p>Общий дом</p>
+            <div class="member-stack" aria-hidden="true">
+              <span class="member member-one">И</span>
+              <span class="member member-two">А</span>
+              <span class="member member-three">М</span>
+              <span class="member member-add">+</span>
+            </div>
+            <div class="sync-event">
+              <span class="sync-icon">✓</span>
+              <p><b>Аня добавила молоко</b><small>Обновлено на всех устройствах</small></p>
+              <time>10:42</time>
+            </div>
+            <div class="sync-event">
+              <span class="sync-icon">−</span>
+              <p><b>Илья использовал яйца</b><small>Осталось 6 штук</small></p>
+              <time>09:18</time>
+            </div>
+          </div>
+          <div class="feature-copy">
+            <span class="feature-number">02</span>
+            <p class="section-kicker">Семья</p>
+            <h2>Одни запасы.<br />Несколько людей.</h2>
+            <p>
+              Участники дома видят актуальный остаток и изменения друг друга.
+              Личные цели питания при этом остаются приватными.
+            </p>
+          </div>
+        </article>
+
+        <article class="feature feature-nutrition reveal">
+          <div class="feature-copy">
+            <span class="feature-number">03</span>
+            <p class="section-kicker">Питание</p>
+            <h2>Блюда подходят<br />именно вам.</h2>
+            <p>
+              КБЖУ продуктов, дневная калорийность и предпочтения помогают
+              подобрать понятный рацион из того, что уже есть дома.
+            </p>
+          </div>
+          <div class="nutrition-visual" aria-label="Пример дневной цели по питанию">
+            <div class="calorie-ring"><span>1 460</span><small>из 2 100 ккал</small></div>
+            <div class="macro-grid">
+              <div><span style="--value: 74%"></span><b>Белки</b><small>86 / 116 г</small></div>
+              <div><span style="--value: 58%"></span><b>Жиры</b><small>41 / 70 г</small></div>
+              <div><span style="--value: 67%"></span><b>Углеводы</b><small>188 / 280 г</small></div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="editorial reveal" aria-label="Продукты на домашней кухне">
+        <img
+          src="assets/pantry-editorial.webp"
+          width="1536"
+          height="1024"
+          loading="lazy"
+          alt="Свежие овощи, хлеб, молоко и крупы на тёмно-зелёной кухонной поверхности"
+        />
+        <div class="editorial-copy">
+          <span>Покупка</span><i aria-hidden="true">→</i><span>Запас</span><i aria-hidden="true">→</i><span>Блюдо</span>
+          <p>Меньше забытых продуктов. Больше ясности каждый день.</p>
+        </div>
+      </section>
+
+      <section class="engineering reveal" id="engineering">
+        <div class="engineering-heading">
+          <p class="section-kicker">Под капотом</p>
+          <h2>Pet-проект,<br />собранный как продукт.</h2>
+          <p>
+            Zapasli — дипломное Android-приложение и цельная инженерная система:
+            от локальной базы на телефоне до собственного HTTPS API.
+          </p>
+          <a
+            class="text-link"
+            href="https://github.com/sokolkolotay/zapasli-android"
+            target="_blank"
+            rel="noreferrer"
+          >Репозиторий Android <span aria-hidden="true">↗</span></a>
+        </div>
+        <ol class="stack-list">
+          <li>
+            <span>01 / Android</span>
+            <div><b>Kotlin · Compose · Room</b><p>Offline-first данные, Material 3 и сканирование штрихкодов.</p></div>
+            <em>v0.2.0</em>
+          </li>
+          <li>
+            <span>02 / Backend</span>
+            <div><b>Ktor · PostgreSQL · OpenAPI</b><p>Argon2id, JWT, refresh rotation, reuse detection и rate limits.</p></div>
+            <em>online</em>
+          </li>
+          <li>
+            <span>03 / Delivery</span>
+            <div><b>Docker · Caddy · GitHub Actions</b><p>Изолированная БД, воспроизводимый deploy и проверяемые релизы.</p></div>
+            <em>CI ✓</em>
+          </li>
+        </ol>
+      </section>
+
+      <section class="status-section reveal" aria-labelledby="status-title">
+        <div>
+          <p class="section-kicker">Честный roadmap</p>
+          <h2 id="status-title">Сейчас работает.<br />Следом станет умнее.</h2>
+        </div>
+        <div class="status-columns">
+          <div>
+            <h3><span class="status-dot ready"></span> Готово</h3>
+            <ul>
+              <li>Offline-каталог продуктов</li>
+              <li>Сканирование EAN/UPC</li>
+              <li>Backend-авторизация и PostgreSQL</li>
+              <li>Автоматические тесты и CI</li>
+            </ul>
+          </div>
+          <div>
+            <h3><span class="status-dot next"></span> В работе</h3>
+            <ul>
+              <li>Семейный дом и синхронизация</li>
+              <li>КБЖУ и личные цели</li>
+              <li>Рецепты из домашних запасов</li>
+              <li>Распознавание бумажного чека</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing reveal">
+        <p class="section-kicker">Zapasli</p>
+        <h2>Запасайтесь.<br />Остальное запомним.</h2>
+        <div class="closing-actions">
+          <a class="button button-light" href="https://github.com/sokolkolotay/zapasli-android" target="_blank" rel="noreferrer">Следить на GitHub <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline-light" href="https://api.zapasli.sokolkolotaj.ru/swagger" target="_blank" rel="noreferrer">Swagger API</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true">z</span><span>zapasli</span></a>
+      <p>Дипломный проект Android Developer · 2026</p>
+      <div><a href="https://github.com/sokolkolotay/zapasli-backend" target="_blank" rel="noreferrer">Backend</a><a href="https://www.figma.com/design/bHjGTihyPGl1NlHkxmNqp0" target="_blank" rel="noreferrer">Figma</a></div>
+    </footer>
+  </body>
+</html>
