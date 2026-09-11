@@ -19,11 +19,11 @@
 		Permissions-Policy "camera=(), microphone=(), geolocation=()"
 	}
 
-	@immutable path_regexp assets \.(?:css|js|svg|webp|png|jpg|jpeg|woff2)$
-	header @immutable Cache-Control "public, max-age=604800"
+	@staticAssets path_regexp assets \.(?:svg|webp|png|jpg|jpeg|woff2)$
+	header @staticAssets Cache-Control "public, max-age=604800"
 
-	@documents path / /index.html
-	header @documents Cache-Control "public, max-age=0, must-revalidate"
+	@revalidate path / /index.html /styles.css /app.js
+	header @revalidate Cache-Control "public, max-age=0, must-revalidate"
 
 	file_server
 
