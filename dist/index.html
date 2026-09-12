@@ -17,8 +17,8 @@
       href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260911-animated-phone" />
-    <script src="app.js?v=20260911-animated-phone" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20260912-diploma-rc" />
+    <script src="app.js?v=20260912-diploma-rc" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">К содержанию</a>
@@ -34,7 +34,7 @@
       </nav>
       <a
         class="header-download"
-        href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.2.0-barcode/zapasli-v0.2.0-demo.apk"
+        href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.3.0-auth/zapasli-v0.3.0-demo.apk"
         aria-label="Скачать приложение Zapasli для Android"
       >
         Скачать APK <span aria-hidden="true">↓</span>
@@ -47,25 +47,25 @@
           <p class="eyebrow"><span></span> Семейные запасы · Android</p>
           <h1>Дом знает,<br />что у вас есть.</h1>
           <p class="hero-lead">
-            Zapasli объединяет продукты, сроки годности и питание семьи в одном
+            Zapasli объединяет продукты, сроки годности и КБЖУ в одном
             спокойном пространстве — без забытых покупок и лишней рутины.
           </p>
           <div class="hero-actions">
             <a
               class="button button-download"
-              href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.2.0-barcode/zapasli-v0.2.0-demo.apk"
-              aria-label="Скачать приложение Zapasli версии 0.2.0 для Android"
+              href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.3.0-auth/zapasli-v0.3.0-demo.apk"
+              aria-label="Скачать приложение Zapasli версии 0.3.0 для Android"
             >
               <span class="download-icon" aria-hidden="true">↓</span>
-              <span><strong>Скачать приложение</strong><small>APK · версия 0.2.0</small></span>
+              <span><strong>Скачать приложение</strong><small>APK · версия 0.3.0</small></span>
             </a>
             <a class="button button-quiet" href="#flow">Как это работает</a>
           </div>
-          <p class="download-note">Демо-сборка · Android 8.0+ · 38,8 МБ</p>
+          <p class="download-note">Демо-сборка · Android 8.0+ · 40,9 МБ</p>
           <dl class="hero-facts" aria-label="Ключевые свойства проекта">
             <div><dt>Offline-first</dt><dd>работает без сети</dd></div>
-            <div><dt>Family sync</dt><dd>единые запасы дома</dd></div>
-            <div><dt>Private by design</dt><dd>личные цели остаются личными</dd></div>
+            <div><dt>Secure auth</dt><dd>собственный HTTPS API</dd></div>
+            <div><dt>Local first</dt><dd>Room хранит данные дома</dd></div>
           </dl>
         </div>
 
@@ -77,93 +77,71 @@
             <div class="phone-content">
               <div class="phone-screen is-active" data-phone-screen>
                 <div class="phone-heading">
-                  <div>
-                    <small>Доброе утро</small>
-                    <strong>Дом семьи Колотай</strong>
-                  </div>
-                  <span class="avatar">ИК</span>
-                </div>
-                <div class="expiry-card">
-                  <div class="expiry-label"><span></span> Важно сегодня</div>
-                  <strong>3 продукта лучше использовать</strong>
-                  <div class="expiry-row">
-                    <div class="food-icon milk">М</div>
-                    <div><b>Молоко 3,2%</b><small>годно до завтра · 930 мл</small></div>
-                    <em>1 дн.</em>
-                  </div>
-                  <div class="expiry-row">
-                    <div class="food-icon herb">З</div>
-                    <div><b>Свежая зелень</b><small>холодильник · 140 г</small></div>
-                    <em>2 дн.</em>
-                  </div>
-                </div>
-                <div class="phone-section-title"><b>На ужин из запасов</b><span>Все</span></div>
-                <div class="recipe-card">
-                  <span class="recipe-visual">🥬</span>
-                  <div><b>Зелёная паста</b><small>25 мин · 520 ккал</small></div>
-                  <span>92%</span>
-                </div>
-                <div class="bottom-nav">
-                  <span class="active">⌂<small>Главная</small></span>
-                  <span>▤<small>Запасы</small></span>
-                  <span class="add">＋</span>
-                  <span>◇<small>Блюда</small></span>
-                  <span>○<small>Профиль</small></span>
-                </div>
-              </div>
-
-              <div class="phone-screen" data-phone-screen>
-                <div class="phone-heading">
-                  <div><small>Дом семьи Колотай</small><strong>Запасы</strong></div>
-                  <span class="avatar inventory-avatar">42</span>
+                  <div><small>Дом семьи Колотай</small><strong>Мои запасы</strong></div>
+                  <span class="avatar inventory-avatar">ИК</span>
                 </div>
                 <div class="inventory-summary">
-                  <small>В наличии</small>
-                  <strong>42 продукта</strong>
-                  <span>5 скоро испортятся</span>
+                  <small>Домашняя кладовая</small>
+                  <strong>3 продукта</strong>
+                  <span>1 лучше использовать скоро</span>
                 </div>
                 <div class="phone-search">⌕&nbsp;&nbsp; Найти в запасах</div>
-                <div class="category-chips"><span class="selected">Все</span><span>Холодильник</span><span>Кладовая</span></div>
+                <div class="category-chips"><span class="selected">Все</span><span>Скоро</span><span>Просрочено</span><span>Без срока</span></div>
                 <div class="inventory-list">
-                  <div><span class="stock-icon stock-milk">М</span><p><b>Молоко</b><small>930 мл · холодильник</small></p><em class="stock-warning">1 день</em></div>
-                  <div><span class="stock-icon stock-eggs">Я</span><p><b>Яйца</b><small>6 штук · холодильник</small></p><em>8 дней</em></div>
-                  <div><span class="stock-icon stock-apple">Яб</span><p><b>Яблоки</b><small>5 штук · кухня</small></p><em>12 дней</em></div>
+                  <div><span class="stock-icon stock-milk">М</span><p><b>Молоко 3,2%</b><small>900 мл · холодильник</small></p><em class="stock-warning">2 дня</em></div>
+                  <div><span class="stock-icon stock-eggs">Я</span><p><b>Яйца C0</b><small>10 штук · холодильник</small></p><em>8 дней</em></div>
+                  <div><span class="stock-icon stock-apple">Я</span><p><b>Яблоки</b><small>1,5 кг · кладовая</small></p><em>без срока</em></div>
                 </div>
                 <div class="bottom-nav">
-                  <span>⌂<small>Главная</small></span>
                   <span class="active">▤<small>Запасы</small></span>
                   <span class="add">＋</span>
-                  <span>◇<small>Блюда</small></span>
-                  <span>○<small>Профиль</small></span>
+                  <span>⚙<small>Настройки</small></span>
                 </div>
               </div>
 
-              <div class="phone-screen nutrition-screen" data-phone-screen>
+              <div class="phone-screen details-screen" data-phone-screen>
                 <div class="phone-heading">
-                  <div><small>Личная цель</small><strong>Мой день</strong></div>
-                  <span class="avatar nutrition-avatar">ИК</span>
+                  <div><small>← Назад</small><strong>О продукте</strong></div>
                 </div>
-                <div class="day-progress">
-                  <div class="mini-calorie-ring"><span>1 460</span><small>из 2 100 ккал</small></div>
-                  <div><small>Цель</small><strong>Баланс</strong><p>Осталось 640 ккал</p></div>
+                <div class="product-hero-mini">
+                  <span class="product-mark">М</span>
+                  <strong>Молоко 3,2%</strong>
+                  <em>Осталось 2 дня</em>
                 </div>
-                <div class="phone-section-title"><b>КБЖУ сегодня</b><span>69%</span></div>
-                <div class="phone-macros">
-                  <div><p><b>Белки</b><small>86 / 116 г</small></p><span><i style="--progress: 74%"></i></span></div>
-                  <div><p><b>Жиры</b><small>41 / 70 г</small></p><span><i style="--progress: 58%"></i></span></div>
-                  <div><p><b>Углеводы</b><small>188 / 280 г</small></p><span><i style="--progress: 67%"></i></span></div>
+                <div class="product-info-mini">
+                  <b>Хранение и срок</b>
+                  <p><span>Место</span><strong>Холодильник</strong></p>
+                  <p><span>Количество</span><strong>900 мл</strong></p>
+                  <p><span>Срок</span><strong>2 дня</strong></p>
                 </div>
-                <div class="meal-suggestion">
-                  <small>Подходит к цели и запасам</small>
-                  <strong>Боул с курицей и овощами</strong>
-                  <span>430 ккал · 31 г белка</span>
+                <div class="product-info-mini macro-info-mini">
+                  <b>КБЖУ на 100 г</b>
+                  <div><span>60<small>ккал</small></span><span>3<small>белки</small></span><span>3,2<small>жиры</small></span><span>4,7<small>углеводы</small></span></div>
                 </div>
-                <div class="bottom-nav">
-                  <span>⌂<small>Главная</small></span>
-                  <span>▤<small>Запасы</small></span>
-                  <span class="add">＋</span>
-                  <span class="active">◇<small>Блюда</small></span>
-                  <span>○<small>Профиль</small></span>
+                <div class="product-info-mini barcode-info-mini">
+                  <b>Штрихкод</b><strong>4600000000001</strong>
+                </div>
+              </div>
+
+              <div class="phone-screen settings-screen" data-phone-screen>
+                <div class="phone-heading">
+                  <div><small>← Назад</small><strong>Настройки</strong></div>
+                </div>
+                <div class="settings-profile-mini">
+                  <span class="avatar inventory-avatar">ИК</span>
+                  <p><small>Дом семьи Колотай</small><strong>Илья</strong></p>
+                </div>
+                <div class="settings-group-mini">
+                  <b>Оформление</b>
+                  <span class="selected">◉ Как в системе</span><span>○ Светлая</span><span>○ Тёмная</span>
+                </div>
+                <div class="settings-group-mini">
+                  <b>Язык</b>
+                  <span class="selected">◉ Язык системы</span><span>○ English</span><span>○ Русский</span>
+                </div>
+                <div class="settings-group-mini compact-settings-group">
+                  <b>Фильтр по умолчанию</b>
+                  <span class="selected">◉ Все продукты</span>
                 </div>
               </div>
             </div>
@@ -172,12 +150,12 @@
             <span class="is-active" data-phone-dot></span><span data-phone-dot></span><span data-phone-dot></span>
           </div>
           <div class="floating-note note-top" aria-hidden="true">
-            <span>−18%</span>
-            <small>меньше списаний</small>
+            <span>20 + 10</span>
+            <small>автотестов пройдено</small>
           </div>
           <div class="floating-note note-bottom" aria-hidden="true">
-            <span>Синхронизировано</span>
-            <small>только что · 3 участника</small>
+            <span>Offline ready</span>
+            <small>Room · на устройстве</small>
           </div>
         </div>
       </section>
@@ -185,13 +163,13 @@
       <section class="flow" id="flow" aria-labelledby="flow-title">
         <div>
           <p class="section-kicker">Один понятный поток</p>
-          <h2 id="flow-title">От покупки<br />до подходящего блюда.</h2>
+          <h2 id="flow-title">От штрихкода<br />до понятного запаса.</h2>
         </div>
         <ol class="flow-list">
-          <li><span>01</span><strong>Чек или штрихкод</strong><p>Добавьте покупку камерой или вручную.</p></li>
+          <li><span>01</span><strong>Штрихкод или вручную</strong><p>Сканируйте EAN/UPC либо заполните форму сами.</p></li>
           <li><span>02</span><strong>Запас и срок</strong><p>Укажите количество и место хранения.</p></li>
           <li><span>03</span><strong>Приоритет</strong><p>Сначала увидите то, что скоро испортится.</p></li>
-          <li><span>04</span><strong>Блюдо</strong><p>Выберите рецепт под продукты и личную цель.</p></li>
+          <li><span>04</span><strong>Детали</strong><p>Проверьте количество, место, срок, штрихкод и КБЖУ.</p></li>
         </ol>
       </section>
 
@@ -207,9 +185,8 @@
             <p class="section-kicker">Сроки</p>
             <h2>Съесть вовремя,<br />а не выбросить.</h2>
             <p>
-              Каждая покупка становится отдельной партией. Zapasli поднимает
-              наверх продукты с ближайшим сроком и подсказывает, куда их
-              использовать.
+              Каждый продукт хранит свой срок. Zapasli поднимает наверх позиции
+              с ближайшей датой и показывает, что использовать первым.
             </p>
           </div>
           <div class="expiry-visual" aria-label="Пример группировки продуктов по сроку">
@@ -244,11 +221,11 @@
           </div>
           <div class="feature-copy">
             <span class="feature-number">02</span>
-            <p class="section-kicker">Семья</p>
+            <p class="section-kicker">Roadmap · Семья</p>
             <h2>Одни запасы.<br />Несколько людей.</h2>
             <p>
-              Участники дома видят актуальный остаток и изменения друг друга.
-              Личные цели питания при этом остаются приватными.
+              Следующий этап продукта: участники дома увидят актуальный остаток
+              и изменения друг друга, а личные цели останутся приватными.
             </p>
           </div>
         </article>
@@ -256,11 +233,11 @@
         <article class="feature feature-nutrition reveal">
           <div class="feature-copy">
             <span class="feature-number">03</span>
-            <p class="section-kicker">Питание</p>
+            <p class="section-kicker">Roadmap · Питание</p>
             <h2>Блюда подходят<br />именно вам.</h2>
             <p>
-              КБЖУ продуктов, дневная калорийность и предпочтения помогают
-              подобрать понятный рацион из того, что уже есть дома.
+              КБЖУ продуктов уже доступны. Следующий этап добавит дневную
+              калорийность и подбор рациона из того, что есть дома.
             </p>
           </div>
           <div class="nutrition-visual" aria-label="Пример дневной цели по питанию">
@@ -283,7 +260,7 @@
           alt="Свежие овощи, хлеб, молоко и крупы на тёмно-зелёной кухонной поверхности"
         />
         <div class="editorial-copy">
-          <span>Покупка</span><i aria-hidden="true">→</i><span>Запас</span><i aria-hidden="true">→</i><span>Блюдо</span>
+          <span>Покупка</span><i aria-hidden="true">→</i><span>Запас</span><i aria-hidden="true">→</i><span>Контроль</span>
           <p>Меньше забытых продуктов. Больше ясности каждый день.</p>
         </div>
       </section>
@@ -307,7 +284,7 @@
           <li>
             <span>01 / Android</span>
             <div><b>Kotlin · Compose · Room</b><p>Offline-first данные, Material 3 и сканирование штрихкодов.</p></div>
-            <em>v0.2.0</em>
+            <em>v0.3.0</em>
           </li>
           <li>
             <span>02 / Backend</span>
@@ -334,6 +311,7 @@
               <li>Offline-каталог продуктов</li>
               <li>Сканирование EAN/UPC</li>
               <li>Backend-авторизация и PostgreSQL</li>
+              <li>КБЖУ, детали, поиск, темы и RU/EN</li>
               <li>Автоматические тесты и CI</li>
             </ul>
           </div>
@@ -341,7 +319,7 @@
             <h3><span class="status-dot next"></span> В работе</h3>
             <ul>
               <li>Семейный дом и синхронизация</li>
-              <li>КБЖУ и личные цели</li>
+              <li>Личные цели и дневной рацион</li>
               <li>Рецепты из домашних запасов</li>
               <li>Распознавание бумажного чека</li>
             </ul>
@@ -353,7 +331,7 @@
         <p class="section-kicker">Zapasli</p>
         <h2>Запасайтесь.<br />Остальное запомним.</h2>
         <div class="closing-actions">
-          <a class="button button-light" href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.2.0-barcode/zapasli-v0.2.0-demo.apk">Скачать приложение <span aria-hidden="true">↓</span></a>
+          <a class="button button-light" href="https://github.com/sokolkolotay/zapasli-android/releases/download/v0.3.0-auth/zapasli-v0.3.0-demo.apk">Скачать приложение <span aria-hidden="true">↓</span></a>
           <a class="button button-outline-light" href="https://github.com/sokolkolotay/zapasli-android" target="_blank" rel="noreferrer">Следить на GitHub <span aria-hidden="true">↗</span></a>
         </div>
       </section>
