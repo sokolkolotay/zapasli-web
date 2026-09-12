@@ -11,7 +11,7 @@ Niagara Launcher, но тексты, композиция, интерфейсн�
 Hero-блок содержит анимированный mockup с тремя экранами приложения. Движение
 автоматически отключается при системной настройке reduced motion. Кнопка
 «Скачать приложение» ведёт на проверенный demo APK из GitHub prerelease
-[`v0.3.1-brand`](https://github.com/sokolkolotay/zapasli-android/releases/tag/v0.3.1-brand).
+[`v0.3.2`](https://github.com/sokolkolotay/zapasli-android/releases/tag/v0.3.2).
 
 Анимированный mockup повторяет три реально доступных экрана Android-релиза:
 кладовую, карточку продукта и настройки. Будущие функции явно отделены в
